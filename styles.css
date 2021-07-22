@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Zen Loop", cursive;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./resources/images/pexels-ryutaro-tsukata-5220010.jpg);
+  background-repeat: repeat;
+}
+
+.container__image {
+  width: 650px;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 10px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container__image {
+    width: 768px;
+    height: 670px;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .container__image {
+    width: 320px;
+    height: 670px;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+.photo {
+  width: 280px;
+  height: 350px;
+  border-radius: 500px;
+  border-color: white;
+  margin-top: 50px;
+}
+
+.btn__container {
+  width: 150px;
+  height: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: lightseagreen;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 120px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
